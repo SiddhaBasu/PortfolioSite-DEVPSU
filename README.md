@@ -10,8 +10,12 @@ Developed with Node.js
 
 * Node.js (https://nodejs.org/en/download)
 * Express (https://expressjs.com/en/starter/installing.html)
+
+**OPTIONAL**
 * Tailwind CSS
 * Material UI
+
+* 
 
 ### Build
 
@@ -22,14 +26,12 @@ npm init -y
 # Allows edits to code without having to restart app completely. 
 npm install nodemon
 
-# CSS templates and resources
-npm install tailwindcss
-
-# Creates a tailwind.config.js file in the root of your project
-npx tailwindcss init -p
+# Run in developer mode
+# CTRL + C to exit
+npm run dev
 ```
 
-**For Material UI components:**
+**For Material UI components and Tailwind CSS**
 ```HTML
 <!-- Add these lines to the <head> section of your HTML files -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
@@ -38,17 +40,22 @@ npx tailwindcss init -p
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 ```
 
+```bash
+# CSS templates and resources
+npm install tailwindcss
+
+# Creates a tailwind.config.js file in the root of your project
+npx tailwindcss init -p
+
 ### Executing program
 
-```bash
-# Run in developer mode
-# CTRL + C to exit
-npm run dev
 ```
 
 ## Create Your Own Git Repository
 
 ```bash
+
+
 # Initiate a git repository on your local
 # -b main changes default branch to main
 git init -b main
