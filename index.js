@@ -1,4 +1,3 @@
-//const http = require("node:http");
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
@@ -8,6 +7,15 @@ const port = 3000;
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
+
+app.get('/', (req, res) => {
+    res.render('index.ejs');
+});
+
+// Start server
+app.listen(port, () => {
+    console.log(`Server is running on http://${hostname}:${port}`);
+});
 
 const projects = [
     {
@@ -25,47 +33,6 @@ const projects = [
     // Add more projects as needed
 ];
 
-app.get('/', (req, res) => {
-    res.render('index.ejs');
-});
-
 app.get('/projects', (req, res) => {
     res.render('projects.ejs', { projects });
 });
-
-// Start server
-app.listen(port, () => {
-    console.log(`Server is running on http://${hostname}:${port}`);
-});
-
-/*
-const server = http.createServer((req, res) => {
-
-    let filePath = __dirname + '/public/index.html';
-
-    //console.log(req.url);
-
-    switch(req.url) {
-        case '/about': 
-            filePath = __dirname + '/public/about.html';
-            break;
-        default:
-            //filePath = __dirname + '/public/index.html';
-            break;
-    }
-
-    res.render
-
-    fs.readFile(filePath, (err, data) => {
-        res.statusCode = 200; // ok
-        res.setHeader('Content-Type', 'text/html');
-        res.end(data, 'utf8');
-    })
-})
-
-
-
-server.listen(port, hostname, () => {
-    console.log(`Server is running at http://${hostname}:${port}`);
-});
-*/
