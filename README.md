@@ -19,6 +19,12 @@ npm init -y
 
 # Allows edits to code without having to restart app completely. 
 npm install nodemon
+
+# CSS templates and resources
+npm install tailwindcss
+
+# Creates a tailwind.config.js file in the root of your project
+npx tailwindcss init -p
 ```
 
 ### Executing program
