@@ -10,6 +10,8 @@ Developed with Node.js
 
 * Node.js (https://nodejs.org/en/download)
 * Express (https://expressjs.com/en/starter/installing.html)
+* Tailwind CSS
+* Material UI
 
 ### Build
 
@@ -25,6 +27,15 @@ npm install tailwindcss
 
 # Creates a tailwind.config.js file in the root of your project
 npx tailwindcss init -p
+```
+
+**For Material UI components:**
+```HTML
+<!-- Add these lines to the <head> section of your HTML files -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 ```
 
 ### Executing program
