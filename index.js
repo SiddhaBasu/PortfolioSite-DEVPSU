@@ -15,7 +15,7 @@ const server = http.createServer((req, res) => {
             filePath = __dirname + '/public/about.html';
             break;
         default:
-            filePath = __dirname + '/public/index.html';
+            //filePath = __dirname + '/public/index.html';
             break;
     }
 

@@ -1,0 +1,19 @@
+/* public/css/style.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html, body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 20px;
+    height: 100%;
+}
+
+h1 {
+    color: #3498db;
+}
+
+p {
+    color: #555;
+}
